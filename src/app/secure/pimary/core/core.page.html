@@ -1,0 +1,51 @@
+<head>
+	
+  </head>
+  <ion-content>
+	<ion-button expand="full" (click)="getData()">Get data</ion-button>
+	<ion-card>
+	  <ion-card-content>
+		{{ secretData }}
+		<b>{{coly}}</b><br>
+		
+		
+	
+		 
+	  </ion-card-content>
+	</ion-card>
+	<h1></h1>
+	<ion-button id="present-alert" (click)="getData()">Click Me</ion-button>
+
+<div class="flex items-center flex-wrap max-w-md px-10 bg-white shadow-xl rounded-2xl h-20" x-data="{ circumference: 50 * 2 * Math.PI, percent: [{message}] }">
+	<div class="flex items-center justify-center -m-6 overflow-hidden bg-white rounded-full">
+	  <svg class="w-32 h-32 transform translate-x-1 translate-y-1" aria-hidden="true">
+		<circle class="text-gray-300" stroke-width="10" stroke="currentColor" fill="transparent" r="50" cx="60" cy="60"></circle>
+		<circle class="text-red-600" stroke-width="10" :stroke-dasharray="circumference" :stroke-dashoffset="circumference - percent / 100 * circumference" stroke-linecap="round" stroke="currentColor" fill="transparent" r="50" cx="60" cy="60" stroke-dasharray="314.1592653589793" stroke-dashoffset="31.41592653589794"></circle>
+	  </svg>
+	  <span class="absolute text-2xl text-red-700" x-text="`${percent}%`">{{message}}</span>
+	</div>
+	<p class="ml-10 font-medium text-gray-600 sm:text-xl">Storage</p>
+
+	<span class="ml-auto text-xl font-medium text-red-600 hidden sm:block">20GB</span>
+</div>
+<form  [formGroup]="order">
+    <div class="input-group">
+      <ion-item>
+        <ion-input placeholder="Username" formControlName="automat_id"></ion-input>
+      </ion-item>
+     
+    </div>
+
+   
+    <ion-button expand="full" (click)="submitForm()">Submit</ion-button>
+  </form>
+	
+ 
+
+
+  </ion-content>
+
+<!-- core.page.html -->
+
+
+	

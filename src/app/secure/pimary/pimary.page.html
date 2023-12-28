@@ -1,0 +1,138 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        
+  <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <!--
+    =========================================MENU START============================================================
+  -->
+
+
+
+  
+  <ion-menu contentId="main-content" type="overlay">
+    <ion-content>
+      <ion-list id="inbox-list">
+        <ion-list-header>Inbox</ion-list-header>
+        <ion-note>hi&#64;ionicframework.com</ion-note>
+
+
+<!--
+    ---------------------------------------MENU Item 1 ----------------------------------------------------------------
+  -->
+
+        <ion-menu-toggle auto-hide="false" >
+          <ion-item routerDirection="root" [routerLink]="['../secondary/profile']" lines="none" detail="false" routerLinkActive="selected">
+            <ion-icon aria-hidden="true" slot="start" [ios]="'person-circle' + '-outline'" [md]="'person-circle'+ '-sharp'"></ion-icon>
+            <ion-label>Profile</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      
+
+
+<!--
+    ---------------------------------------MENU Item 1 ----------------------------------------------------------------
+  -->
+
+  <ion-menu-toggle auto-hide="false" >
+    <ion-item routerDirection="root" [routerLink]="['../secondary/profile']" lines="none" detail="false" routerLinkActive="selected">
+      <ion-icon aria-hidden="true" slot="start" [ios]="'person-circle' + '-outline'" [md]="'person-circle'+ '-sharp'"></ion-icon>
+      <ion-label>Profile</ion-label>
+    </ion-item>
+  </ion-menu-toggle>
+<!--
+    ---------------------------------------MENU Item 1 ----------------------------------------------------------------
+  -->
+
+  <ion-menu-toggle auto-hide="false" >
+    <ion-item routerDirection="root" [routerLink]="['../secondary/profile']" lines="none" detail="false" routerLinkActive="selected">
+      <ion-icon aria-hidden="true" slot="start" [ios]="'person-circle' + '-outline'" [md]="'person-circle'+ '-sharp'"></ion-icon>
+      <ion-label>Profile</ion-label>
+    </ion-item>
+  </ion-menu-toggle>
+<!--
+    ---------------------------------------MENU Item 1 ----------------------------------------------------------------
+  -->
+
+  <ion-menu-toggle auto-hide="false" >
+    <ion-item routerDirection="root" [routerLink]="['../secondary/profile']" lines="none" detail="false" routerLinkActive="selected">
+      <ion-icon aria-hidden="true" slot="start" [ios]="'person-circle' + '-outline'" [md]="'person-circle'+ '-sharp'"></ion-icon>
+      <ion-label>Profile</ion-label>
+    </ion-item>
+  </ion-menu-toggle>
+<!--
+    ---------------------------------------MENU Item 1 ----------------------------------------------------------------
+  -->
+
+  <ion-menu-toggle auto-hide="false" >
+    <ion-item routerDirection="root" [routerLink]="['../secondary/profile']" lines="none" detail="false" routerLinkActive="selected">
+      <ion-icon aria-hidden="true" slot="start" [ios]="'person-circle' + '-outline'" [md]="'person-circle'+ '-sharp'"></ion-icon>
+      <ion-label>Profile</ion-label>
+    </ion-item>
+  </ion-menu-toggle>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <ion-buttons slot="end">
+    <ion-button (click)="logout()">
+      <ion-icon slot="icon-only" name="log-out"></ion-icon>
+    </ion-button>
+    </ion-buttons>
+
+
+
+
+
+      </ion-list>
+
+
+
+
+
+
+
+
+
+  
+    </ion-content>
+
+
+  </ion-menu>
+
+
+
+
+
+
+
+
+<!--
+    =========================================MENU END============================================================
+  -->
+
+
+
+
+
+
+  <ion-content >
+  
+ <app-core id="main-content"></app-core>
+
+  </ion-content>
