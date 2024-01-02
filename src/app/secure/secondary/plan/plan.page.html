@@ -10,4 +10,24 @@
       <ion-title size="large">plan</ion-title>
     </ion-toolbar>
   </ion-header>
+
+
+
+
+
+  <form  [formGroup]="plan">
+    <div class="input-group">
+      <ion-item>
+        <ion-input placeholder="chois" formControlName="plan_type"></ion-input>
+      </ion-item>
+     
+    </div>
+
+   
+    <ion-button expand="full" (click)="submitForm()">Submit</ion-button>
+  </form>
+	
+
+
+
 </ion-content>

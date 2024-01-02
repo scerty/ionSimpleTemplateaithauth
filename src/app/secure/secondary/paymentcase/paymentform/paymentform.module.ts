@@ -5,18 +5,17 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PlanPageRoutingModule } from './plan-routing.module';
+import { PaymentformPageRoutingModule } from './paymentform-routing.module';
 
-import { PlanPage } from './plan.page';
+import { PaymentformPage } from './paymentform.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PlanPageRoutingModule,
-    ReactiveFormsModule
+    PaymentformPageRoutingModule,ReactiveFormsModule
   ],
-  declarations: [PlanPage]
+  declarations: [PaymentformPage]
 })
-export class PlanPageModule {}
+export class PaymentformPageModule {}

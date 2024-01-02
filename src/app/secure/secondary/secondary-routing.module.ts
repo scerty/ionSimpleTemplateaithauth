@@ -20,6 +20,19 @@ const routes: Routes = [
   {
     path: 'plan',
     loadChildren: () => import('./plan/plan.module').then( m => m.PlanPageModule)
+  },
+  
+  {
+    path: 'paymentform',
+    loadChildren: () => import('./paymentcase/paymentform/paymentform.module').then( m => m.PaymentformPageModule)
+  },
+  {
+    path: 'paymentsuccess',
+    loadChildren: () => import('./paymentcase/paymentsuccess/paymentsuccess.module').then( m => m.PaymentsuccessPageModule)
+  },
+  {
+    path: 'paymenterror',
+    loadChildren: () => import('./paymentcase/paymenterror/paymenterror.module').then( m => m.PaymenterrorPageModule)
   }
 ];
 

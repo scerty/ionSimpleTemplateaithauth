@@ -1,22 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PlanPageRoutingModule } from './plan-routing.module';
+import { PaymentsuccessPageRoutingModule } from './paymentsuccess-routing.module';
 
-import { PlanPage } from './plan.page';
+import { PaymentsuccessPage } from './paymentsuccess.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PlanPageRoutingModule,
-    ReactiveFormsModule
+    PaymentsuccessPageRoutingModule
   ],
-  declarations: [PlanPage]
+  declarations: [PaymentsuccessPage]
 })
-export class PlanPageModule {}
+export class PaymentsuccessPageModule {}

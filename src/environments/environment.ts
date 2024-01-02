@@ -4,7 +4,11 @@
 
 export const environment = {
   production: false,
-  api:'http://127.0.0.1:8000/api'
+  
+ // api:'http://192.168.1.231/:8000/api' //wifi network
+  api:'http://127.0.0.1:8000/api',// localhost,
+  stripe_key:'pk_test_51H6eY2IqF7uTTyi6tHpJFUGg1Fb1Z7X11a6rwpgD1j3QHXu5tGEyuJLVVVdonPAIXvU9DIJHZ9ytWDsYVpCIKk5Q00lV9KgbzQ'
+  //
 };
 
 /*

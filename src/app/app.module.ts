@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PimaryPage } from './secure/pimary/pimary.page';
 import { CorePage } from './secure/pimary/core/core.page';
+import { PlanInterceptor } from './interceptors/plan.interceptor';
 //import { SecondContentPage } from './secure/secondary/second-content/second-content.page';
 //import { SecondaryPage } from './secure/secondary/secondary.page';
 
@@ -19,9 +20,13 @@ import { CorePage } from './secure/pimary/core/core.page';
 @NgModule({
   declarations: [AppComponent,PimaryPage,CorePage],
   imports: [HttpClientModule,BrowserModule, IonicModule.forRoot(), AppRoutingModule,ReactiveFormsModule,FormsModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
   
-  
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: PlanInterceptor,
+      multi: true
+    }
   
     , {
       provide: HTTP_INTERCEPTORS,
